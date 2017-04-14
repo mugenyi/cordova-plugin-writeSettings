@@ -1,4 +1,4 @@
-Cordova Plugin Template
+Cordova.Plugin To Request Write Settings Permissions
 ======
 
-This is a simple starting point for building a Cordova plugin on iOS and Android.
+Cordova Plugin To Request Write Settings Permissions for android 6.0 and above

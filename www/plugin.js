@@ -8,7 +8,12 @@ var WriteSettings = {
     },
     getDate: function(cb) {
         exec(cb, null, PLUGIN_NAME, 'getDate', []);
+    },
+
+    requestWriteSettings: function(cb) {
+        exec(cb, null, PLUGIN_NAME, 'requestPermission', []);
     }
+
 };
 
 module.exports = WriteSettings;

@@ -13,9 +13,7 @@ var WriteSettings = {
             successCallback(status);
         }
 
-
-
-        exec(onSuccess, onError, PLUGIN_NAME, 'requestPermission', []);
+        return exec(onSuccess, onError, PLUGIN_NAME, 'requestPermission', []);
     }
 
 };

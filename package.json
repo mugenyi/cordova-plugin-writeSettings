@@ -1,12 +1,29 @@
 {
-  "name": "cordova-plugin-template",
-  "version": "1.0.0",
-  "cordova": {
-    "id": "cordova-plugin-template",
-    "platforms": [
-      "android",
-      "ios",
-    ]
-  },
-  "description": "A starting point for a Cordova Plugin"
+    "name": "cordova-plugin-writesettings",
+    "version": "0.0.1",
+    "cordova": {
+        "id": "cordova-plugin-writeSettings",
+        "platforms": [
+            "android"
+        ]
+    },
+    "description": "Cordova Plugin to request write settings permissions for android 6.0 and above",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mugenyi/cordova-plugin-writeSettings.git"
+    },
+    "keywords": [
+        "write",
+        "permissions"
+    ],
+    "author": "mugenyi henry",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mugenyi/cordova-plugin-writeSettings/issues"
+    },
+    "homepage": "https://github.com/mugenyi/cordova-plugin-writeSettings#readme"
 }

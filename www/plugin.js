@@ -3,8 +3,24 @@ var exec = require('cordova/exec');
 var PLUGIN_NAME = 'WriteSettings';
 
 var WriteSettings = {
-    requestWriteSettings: function(cb) {
-        exec(cb, null, PLUGIN_NAME, 'requestPermission', []);
+    requestWriteSettings: function(successCallback, errorCallback) {
+        if (requestInProgress) {
+            return onError("A runtime permissions request is already in progress");
+        }
+
+        function onError(error) {
+            requestInProgress = false;
+            errorCallback(error);
+        }
+
+        function onSuccess(status) {
+            requestInProgress = false;
+            successCallback(statuses);
+        }
+
+        requestInProgress = true;
+
+        exec(onSuccess, onError, PLUGIN_NAME, 'requestPermission', []);
     }
 
 };

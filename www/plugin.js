@@ -15,7 +15,7 @@ var WriteSettings = {
 
         function onSuccess(status) {
             requestInProgress = false;
-            successCallback(statuses);
+            successCallback(status);
         }
 
         requestInProgress = true;
